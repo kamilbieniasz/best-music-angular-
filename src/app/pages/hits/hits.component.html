@@ -1,0 +1,14 @@
+<div class="container">
+  <span class="elementList" *ngFor="let music of musics">
+    <span class="description">
+      <span class="titleAuthor">
+        {{music.title}} - {{music.author}}
+      </span>
+      <span class="otherInfo">
+        z albumu: {{music.album}}
+      </span>
+    </span>
+    <button>Zobacz szczegóły</button>
+  </span>
+  
+</div>

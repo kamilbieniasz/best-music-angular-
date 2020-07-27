@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    background-image: linear-gradient(to right, #1E2224, #A622CD);
+    width:100vw;
+    min-width: 650px;
+    height:100px;
+    color:white;
+    font-size:25px;
+    position: relative;
+
+    ul{
+        display:flex;
+        position: absolute;
+        right:0;
+        top:50%;
+        transform:translateY(-50%);
+        
+        li{
+            list-style-type: none;
+            width:200px;
+        }
+    }
+}
+.active{
+    color:red;
+}
