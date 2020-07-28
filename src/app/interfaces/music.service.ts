@@ -7,5 +7,4 @@ export interface Music{
   vote: number;
   year: number;
   link: string;
-
 }

@@ -1,0 +1,90 @@
+.container{
+    width: 100vw;
+    height: 89vh;
+    display:flex;
+
+    @mixin styleOfThree {
+        width:50%;
+        height:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        .table{
+            width:80%;
+            height:54%;
+            border: 2px solid black;
+            display:flex;
+            flex-direction: column;
+            
+            .label{
+                width:100%;
+                height:15%;
+                color:white;
+                border-bottom: 2px solid black;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size:45px;
+            }
+            .rating{
+                width:95%;
+                height:100px;
+                background-color: red;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin:10px;
+                color:white;
+
+                .description {
+                    width:150px;
+                    display:flex;
+                    flex-direction: column;
+              
+                    .titleAuthor {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        margin-left:15px;
+                    }
+              
+                    .otherInfo {
+                        width: 100%;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        margin-left:15px;
+                    }
+                  }
+                  .voting{
+                    font-size: 30px;
+                }
+                button{
+                    height:50px;
+                    margin-right:15px;
+                    border:none;
+                    background-color: transparent;
+                    color:white;
+                  }
+            }
+        }
+    }
+    
+    .bestOfThree{
+        @include styleOfThree;
+
+        .label{
+            background-image: linear-gradient(to right, #1E2224, #A622CD);
+        }
+    }
+    
+    .worstOfThree{
+        @include styleOfThree;
+        .label{
+            background-image: linear-gradient(to left, #1E2224, #A622CD);
+        }
+        
+    }
+}
