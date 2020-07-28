@@ -1,5 +1,7 @@
-<div class="first">
-    <span class="second" *ngFor="let musicGenre of musicGenres">
-        <span>{{musicGenre.type}}</span>
+<div class="container">
+    <span class="listElements" 
+    *ngFor="let musicGenre of musicGenres"
+    [routerLink]="['/genre', musicGenre.type]">
+        <span class="element">{{musicGenre.type}}</span>
     </span>
 </div>

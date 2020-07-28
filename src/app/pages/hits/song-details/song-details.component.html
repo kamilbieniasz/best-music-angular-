@@ -1,0 +1,16 @@
+<div class="container" *ngIf="songDetails | async as song">
+  <span class="songDescription">
+    <span>
+      Tytuł: {{song.title}}<br>
+      Wykonawca: {{song.author}}<br>
+      Album: {{song.album}}<br>
+      Gatunek Muzyki: {{song.type}}<br>
+      Data Wydania: {{song.year}}<br>
+    </span>
+  </span>
+  <span class="ytMusic">
+    <iframe width="560" height="315" [src]="song.link | safe: 'resourceUrl'" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </span>
+</div>

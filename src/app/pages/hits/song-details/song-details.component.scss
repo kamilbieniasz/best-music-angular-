@@ -1,0 +1,21 @@
+.container {
+width:100vw;
+height:89vh;
+display:flex;
+@mixin componentStyle {
+    width: 50%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+  .songDescription {
+    @include componentStyle;
+  }
+
+  .ytMusic {
+    @include componentStyle;
+  }
+}

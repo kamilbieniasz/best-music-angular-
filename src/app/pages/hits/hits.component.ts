@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GetDBService } from '../../services/get-db.service';
 import { Music } from '../../interfaces/music.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-hits',
@@ -8,7 +9,7 @@ import { Music } from '../../interfaces/music.service';
   styleUrls: ['./hits.component.scss']
 })
 export class HitsComponent implements OnInit {
-  musics: Music[];
+  musics: Observable<Music[]>;
 
   constructor(private musicDB: GetDBService) { }
 

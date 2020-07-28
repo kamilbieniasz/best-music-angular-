@@ -1,11 +1,23 @@
-.first{
+.container{
     width: 100vw;
-    height: 100vh;
-    background-color: blue;
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(8,140px);
+    justify-content: center;
+    margin-top:10px;
+    
+    .listElements{
 
-    .second{
-        display:flex;
-        justify-content: center;
-        align-items: center;
+        .element{
+            width:140px;
+            height:70px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size:25px;
+            color:white;
+            background-color: red;
+            cursor: pointer;
+        }
     }
 }

@@ -4,6 +4,8 @@ export interface Music{
   author: string;
   album: string;
   type: string;
+  vote: number;
   year: number;
+  link: string;
 
 }
