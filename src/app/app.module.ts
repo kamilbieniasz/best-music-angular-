@@ -11,6 +11,7 @@ import { GenresOfMusicComponent } from './pages/genres-of-music/genres-of-music.
 import { MusicByGenreComponent } from './pages/genres-of-music/music-by-genre/music-by-genre.component';
 import { RatingComponent } from './pages/rating/rating.component';
 import { SongDetailsComponent } from './pages/hits/song-details/song-details.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { SongDetailsComponent } from './pages/hits/song-details/song-details.com
     GenresOfMusicComponent,
     MusicByGenreComponent,
     RatingComponent,
-    SongDetailsComponent
+    SongDetailsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

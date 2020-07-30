@@ -11,7 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class MusicByGenreComponent implements OnInit {
   musics: Observable<Music[]>;
-  
+
   constructor(private getDB: GetDBService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

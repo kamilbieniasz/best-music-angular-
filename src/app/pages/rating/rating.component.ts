@@ -14,8 +14,8 @@ export class RatingComponent implements OnInit {
   constructor(private musicDB: GetDBService) { }
 
   ngOnInit(): void {
-   this.musicDB.bestOfThree().subscribe(data => this.musicsBest = data);
-   this.musicDB.worstOfThree().subscribe(data => this.musicsWorst = data);
+   this.musicDB.ofThree('b').subscribe(data => this.musicsBest = data);
+   this.musicDB.ofThree('w').subscribe(data => this.musicsWorst = data);
   }
 
 }

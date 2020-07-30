@@ -36,26 +36,21 @@ export class GetDBService {
     return this.http.patch(this.url + '/music/' + id, music);
   }
 
-  sortedBest(): Observable<Music[]>{
-    return this.getMusic().pipe(
-      map(results => results.sort((a, b) => a.vote > b.vote ? -1 : 1))
-    );
+  sorted(flag: string): Observable<Music[]> {
+    if (flag === 'b') {
+      return this.getMusic().pipe(
+        map(results => results.sort((a, b) => a.vote > b.vote ? -1 : 1))
+      );
+    }
+    else if (flag === 'w') {
+      return this.getMusic().pipe(
+        map(results => results.sort((a, b) => a.vote > b.vote ? 1 : -1))
+      );
+    }
   }
 
-  sortedWorst(): Observable<Music[]>{
-    return this.getMusic().pipe(
-      map(results => results.sort((a, b) => a.vote > b.vote ? 1 : -1))
-    );
-  }
-
-  bestOfThree(): Observable<Music[]> {
-    return this.sortedBest().pipe(
-      map(data => data.slice(0, 3))
-    );
-  }
-
-  worstOfThree(): Observable<Music[]> {
-    return this.sortedWorst().pipe(
+  ofThree(flag: string): Observable<Music[]> {
+    return this.sorted(flag).pipe(
       map(data => data.slice(0, 3))
     );
   }
