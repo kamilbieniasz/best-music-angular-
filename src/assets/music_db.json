@@ -1,0 +1,163 @@
+{
+  "music": [
+    {
+      "id": 1,
+      "title": "Believe",
+      "author": "The HIM",
+      "album": "Believe",
+      "type": "pop",
+      "vote": 12,
+      "year": 2020,
+      "link": "https://www.youtube.com/embed/RPuS6_ayrJ4"
+    },
+    {
+      "id": 2,
+      "title": "UN DIA",
+      "author": "Dua Lipa",
+      "album": "UN DIA (ONE DAY)",
+      "type": "pop",
+      "vote": 3,
+      "year": 2020,
+      "link": "https://www.youtube.com/embed/BjhW3vBA1QU"
+    },
+    {
+      "id": 3,
+      "title": "Hallucinate",
+      "author": "Dua Lipa",
+      "album": "Future Nostalgia",
+      "type": "pop",
+      "vote": 1,
+      "year": 2020,
+      "link": "https://youtube.com/embed/lOfFxhAhZuA"
+    },
+    {
+      "id": 4,
+      "title": "Na spokojnie",
+      "author": "Paluch",
+      "album": "10/29",
+      "type": "rap",
+      "vote": 10,
+      "year": 2016,
+      "link": "https://youtube.com/embed/iabgFNvbcL0"
+    },
+    {
+      "id": 5,
+      "title": "Papa",
+      "author": "Younotus",
+      "album": "Papa",
+      "type": "electric",
+      "vote": 4,
+      "year": 2020,
+      "link": "https://youtube.com/embed/6p22022Hkbc"
+    },
+    {
+      "id": 6,
+      "title": "Lime (TeQuile-ila)",
+      "author": "Edyta Górniak",
+      "album": "Singiel",
+      "type": "pop",
+      "vote": -7,
+      "year": 2020,
+      "link": "https://youtube.com/embed/4iLZOFUBnLc"
+    },
+    {
+      "id": 7,
+      "title": "Say My Name",
+      "author": "Dimitri Vegas",
+      "album": "Say My Name",
+      "type": "R&B",
+      "vote": 3,
+      "year": 2020,
+      "link": "https://youtube.com/embed/ktnmRKV0a04"
+    },
+    {
+      "id": 8,
+      "title": "BubbleTea",
+      "author": "Quebonafide",
+      "album": "ROMANTIC PSYCHO",
+      "type": "rap",
+      "vote": -4,
+      "year": 2020,
+      "link": "https://youtube.com/embed/IFAF3NYM_KI"
+    },
+    {
+      "id": 9,
+      "title": "Kultowe",
+      "author": "Tymek",
+      "album": "Single",
+      "type": "rap",
+      "vote": 3,
+      "year": 2020,
+      "link": "https://youtube.com/embed/51mA6-PQoc8"
+    },
+    {
+      "id": 10,
+      "title": "Daleko stąd",
+      "author": "Paluch",
+      "album": "Made in Heaven",
+      "type": "rap",
+      "vote": 11,
+      "year": 2014,
+      "link": "https://youtube.com/embed/95QezICaQtY"
+    }
+  ],
+  "musicGenre": [
+    {
+      "type": "pop"
+    },
+    {
+      "type": "rap"
+    },
+    {
+      "type": "rock"
+    },
+    {
+      "type": "jazz"
+    },
+    {
+      "type": "electric"
+    },
+    {
+      "type": "classical"
+    },
+    {
+      "type": "blues"
+    },
+    {
+      "type": "chillout"
+    },
+    {
+      "type": "disco"
+    },
+    {
+      "type": "Film & Musical"
+    },
+    {
+      "type": "Funk"
+    },
+    {
+      "type": "Heavy Metal"
+    },
+    {
+      "type": "Punk"
+    },
+    {
+      "type": "R&B"
+    },
+    {
+      "type": "Reggae"
+    },
+    {
+      "type": "Rock'n'roll"
+    },
+    {
+      "type": "Salsa"
+    },
+    {
+      "type": "Samba"
+    },
+    {
+      "type": "Techno"
+    }
+  ]
+}

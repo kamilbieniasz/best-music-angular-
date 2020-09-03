@@ -9,13 +9,13 @@ import { SlicePipe } from '@angular/common';
   providedIn: 'root'
 })
 export class GetDBService {
-  private url = 'http://localhost:3000';
+  private url = './assets/music_db.json';
 
   constructor(private http: HttpClient) { }
 
 
-  getMusic(): Observable<Music[]> {
-    return this.http.get<Music[]>(this.url + '/music');
+  getMusic(): Observable<any> {
+    return this.http.get(this.url);
   }
 
   getMusicGenre(): Observable<any> {

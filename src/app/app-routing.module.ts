@@ -9,6 +9,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 
 const routes: Routes = [
     { path: '', redirectTo: '/hits', pathMatch: 'full'},
+    { path: 'assets/music_db.json', redirectTo: '../assets/music_db.json', pathMatch: 'full'},
     { path: 'hits', component: HitsComponent },
     { path: 'hit/:id', component: SongDetailsComponent },
     { path: 'genres', component: GenresOfMusicComponent },
