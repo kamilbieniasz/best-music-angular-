@@ -9,17 +9,17 @@ import { SlicePipe } from '@angular/common';
   providedIn: 'root'
 })
 export class GetDBService {
-  private url = 'http://localhost:3000';
+  private url = 'https://bestmusicapp-db.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
 
 
   getMusic(): Observable<any> {
-    return this.http.get(this.url + '/music');
+    return this.http.get(this.url + 'music');
   }
 
   getMusicGenre(): Observable<any> {
-    return this.http.get(this.url + '/musicGenre');
+    return this.http.get(this.url + 'musicGenre');
   }
 
   getMusicFromGenre(genre: string): Observable<Music[]> {
@@ -29,11 +29,11 @@ export class GetDBService {
   }
 
   getSong(id: string): Observable<any> {
-    return this.http.get(this.url + '/music/' + id);
+    return this.http.get(this.url + 'music/' + id);
   }
 
   patchVote(id: number, music: Partial<Music>): Observable<any> {
-    return this.http.patch(this.url + '/music/' + id, music);
+    return this.http.patch(this.url + 'music/' + id, music);
   }
 
   sorted(flag: string): Observable<Music[]> {
